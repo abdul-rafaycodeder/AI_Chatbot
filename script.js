@@ -31,6 +31,8 @@ sendBtn.addEventListener('click', async () => {
 
     const botReplay = "Replay";
     typingDiv.remove();
-    addMessage(botReplay, "bot-message")
+    addMessage(botReplay, "bot-message");
+
+    localStorage.setItem('chatHistory', chatbox.innerHTML)
 })
 
